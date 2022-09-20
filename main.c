@@ -2,12 +2,15 @@
 
 int main(void)
 {
-	char text;
+	int x, y;
 	
-	printf("input a character : ");
-	scanf("%c", &text);
+	printf("분자를 입력하세요 : ");
+	scanf("%d", &x);
+
+	printf("분모를 입력하세요 : ");
+	scanf("%d", &y);
 	
-	printf("the next charater of %c (%d) is %c (%d)\n", text, text, text+1, text+1);
+	printf("나누기의 결과는 %f 입니다.\n", (float)x/y);
 	
 	return 0;
 	
